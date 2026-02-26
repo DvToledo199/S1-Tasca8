@@ -64,6 +64,39 @@ Car brands containing 'o' and more than 5 letters:
 
 ---
 
+## Exercise 3
+
+### Statement
+
+Create a list containing the names of the months of the year.  
+Print all the elements of the list using a lambda expression.
+
+### Implementation
+
+- A list with the months of the year is created in `main`.
+- A static method is used to print the elements of the list.
+- The printing logic is implemented using a lambda expression with `forEach`.
+- No filtering or transformation is applied.
+
+### Example output
+
+```
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+```
+
+---
+
 ## Class responsibilities
 
 ### Main
