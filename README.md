@@ -97,6 +97,37 @@ December
 
 ---
 
+## Exercise 4
+
+### Statement
+
+Repeat the same output as in the previous exercise, but using a **method reference** instead of a lambda expression.
+
+### Implementation
+
+- The same list of months is reused.
+- The printing logic is updated to use a method reference.
+- The program behavior and output remain unchanged.
+
+### Example output
+
+```
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+```
+
+---
+
 ## Class responsibilities
 
 ### Main
