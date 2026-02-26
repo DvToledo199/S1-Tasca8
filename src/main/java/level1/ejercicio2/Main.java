@@ -1,4 +1,4 @@
-package level1.ejercicio1;
+package level1.ejercicio2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,9 +22,11 @@ public class Main {
 
         System.out.println();
 
-        List<String> brandsWithO = StringFilter.filterStringsContainingO(carBrands);
-        System.out.println("Car brands containing 'o':");
-        System.out.println(brandsWithO);
+
+        List<String> brandsWithOAndMoreThanFiveLetters = StringFilter.filterStringsContainingO(carBrands);
+        System.out.println("Car brands containing 'o' and more than 5 letters:");
+        System.out.println(brandsWithOAndMoreThanFiveLetters);
+
 
 
     }
