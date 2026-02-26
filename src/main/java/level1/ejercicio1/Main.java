@@ -17,6 +17,12 @@ public class Main {
                         "Porsche",
                         "Alpine")
         );
+        System.out.println("Original car brands:");
+        System.out.println(carBrands);
+
+        List<String> brandsWithO = StringFilter.filterStringsContainingO(carBrands);
+        System.out.println("Car brands containing 'o':");
+        System.out.println(brandsWithO);
 
 
     }
