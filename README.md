@@ -128,6 +128,28 @@ December
 
 ---
 
+## Exercise 5
+
+### Statement
+
+Create a **Functional Interface** with a method named `getPiValue()` that returns a `double`.  
+From the `main()` method, instantiate the interface using a lambda expression, assign it the value **3.1415**, invoke the method, and print the result.
+
+### Implementation
+
+- A custom functional interface is created with a single abstract method.
+- The interface is implemented using a lambda expression.
+- The lambda provides the return value `3.1415`.
+- The method is invoked from `main`, and the returned value is printed to the console.
+
+### Example output
+
+```
+3.1415
+```
+
+---
+
 ## Class responsibilities
 
 ### Main
