@@ -150,6 +150,29 @@ From the `main()` method, instantiate the interface using a lambda expression, a
 
 ---
 
+## Exercise 6
+
+### Statement
+
+Create a list containing both numbers and text strings, and sort the list so that the strings are ordered from the shortest to the longest.
+
+### Implementation
+
+- A mixed list (`List<Object>`) is created containing integers and strings.
+- The sorting logic is implemented using a lambda expression as a `Comparator`.
+- Strings are ordered by their length (ascending).
+- Numbers keep their original relative order.
+- The sorting logic is separated into a dedicated class.
+
+### Example output
+
+```
+Sorted list:
+[500, 34, 7, 1234, 89, 100000, 42, 3, Bo, Jo, Ana, Eva, Luis, Alexandra, Christopher, Maximiliano]
+```
+
+---
+
 ## Class responsibilities
 
 ### Main
@@ -163,6 +186,12 @@ From the `main()` method, instantiate the interface using a lambda expression, a
 - Contains static filtering methods
 - Uses Streams and lambda expressions
 - Does not print or modify the original list
+
+### MixedListSorter
+
+- Contains the sorting logic for mixed lists
+- Uses a lambda expression as a Comparator
+- Orders strings by length while preserving number order
 
 ---
 
