@@ -196,6 +196,27 @@ Sorted list:
 
 ---
 
+## Exercise 8
+
+### Statement
+
+Create a **Functional Interface** containing a method named `reverse()` that receives and returns a `String`.  
+From the `main()` method, implement the interface using a lambda expression so that it returns the received string reversed.  
+Invoke the interface instance passing a string and verify that the result is correct.
+
+### Implementation
+
+- A custom functional interface defines the contract for reversing text.
+- The reversing logic is implemented using a lambda expression.
+- A `StringBuilder` is used to construct the reversed string efficiently.
+- The lambda implementation is separated into a dedicated service class to keep `main` focused only on execution.
+
+### Example output
+
+```
+oderflA
+```
+
 ## Class responsibilities
 
 ### Main
@@ -215,6 +236,17 @@ Sorted list:
 - Contains the sorting logic for mixed lists
 - Uses a lambda expression as a Comparator
 - Orders strings by length while preserving number order
+
+### ReverseInterface
+
+- Defines a functional interface with a single method to reverse a string
+- Represents the contract implemented using a lambda expression
+
+### ReverseService
+
+- Provides the lambda implementation of the reversing logic
+- Returns an implementation of `ReverseInterface`
+- Keeps business logic separated from the `main` class
 
 ---
 
