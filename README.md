@@ -173,6 +173,29 @@ Sorted list:
 
 ---
 
+## Exercise 7
+
+### Statement
+
+Using the list from the previous exercise, sort it in reverse order, arranging the strings from the longest to the shortest.
+
+### Implementation
+
+- The same mixed list (`List<Object>`) is reused.
+- The sorting logic is implemented using a lambda expression as a `Comparator`.
+- Strings are ordered by length in descending order.
+- Numbers keep their original relative order.
+- Only the comparison logic is inverted from Exercise 6.
+
+### Example output
+
+```
+Sorted list:
+[500, 34, 7, 1234, 89, 100000, 42, 3, Maximiliano, Christopher, Alexandra, Luis, Ana, Eva, Jo, Bo]
+```
+
+---
+
 ## Class responsibilities
 
 ### Main
