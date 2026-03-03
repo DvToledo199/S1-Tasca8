@@ -234,7 +234,7 @@ oderflA
 ### MixedListSorter
 
 - Contains the sorting logic for mixed lists
-- Uses a lambda expression as a Comparator
+- Uses a lambda expression as a `Comparator`
 - Orders strings by length while preserving number order
 
 ### ReverseInterface
@@ -255,3 +255,35 @@ oderflA
 - Java 16 or higher
 - Use of Java Lambdas and Streams API
 - No traditional loops for filtering
+
+---
+
+# Level 2 – Functional Data Manipulation
+
+## Exercise 1
+
+### Statement
+
+Create a list of proper names and implement a method that returns a new list containing only the strings that:
+- Start with the uppercase letter **'A'**
+- Have **exactly 3 characters**
+
+Print the result to the console.
+
+### Implementation
+
+- The list of names is created in `main`.
+- A dedicated class (`NameFilter`) contains a static method responsible for filtering.
+- The filtering logic is implemented using the Java Streams API.
+- Two conditions are combined inside a single `filter()` operation:
+  - `startsWith("A")`
+  - `length() == 3`
+- The stream result is collected into a new list using `toList()`.
+- The original list remains unchanged.
+
+### Example output
+
+```
+Filtered names:
+[Ary, Aeg]
+```
