@@ -363,4 +363,46 @@ Addition: 25.0
 Subtraction: 22.0
 Multiplication: 320.0
 Division: 5.0
+
+---
+
+## Exercise 4
+
+### Statement
+
+Create a list containing several **text strings and numeric values (stored as Strings)**.
+
+Perform the following operations using the Java Streams API:
+
+- Sort the elements **alphabetically by their first character**.
+- Place the strings that **contain the letter "e" first**, followed by the rest.
+- Modify every element that contains the character **'a'**, replacing it with **'4'**.
+- Display **only the elements that are numeric**, even though they are stored as Strings.
+
+### Implementation
+
+- The original list is created in `main`.
+- A dedicated utility class (`ListProcessor`) contains static methods responsible for each transformation.
+- The Java Streams API is used throughout the exercise:
+  - `sorted()` with a lambda expression to order elements by the first character.
+  - A custom comparator to place strings containing "e" first.
+  - `map()` to replace the character `'a'` with `'4'`.
+  - `filter()` combined with `Character.isDigit()` to keep only numeric strings.
+- Each operation returns a **new list**, keeping the original list unchanged.
+
+### Example output
+
+```
+Sorted by first character:
+[123, 456, apple, banana, car, house, tree]
+
+Strings containing "e" first:
+[tree, apple, house, car, 456, banana, 123]
+
+Replace 'a' with '4':
+[c4r, 456, b4n4n4, tree, 123, 4pple, house]
+
+Numeric elements only:
+[456, 123]
+```
 ```
