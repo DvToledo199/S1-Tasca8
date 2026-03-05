@@ -329,3 +329,38 @@ The result must be printed to the console.
 ```
 o3, o55, e44, e8, o11
 ```
+
+---
+
+## Exercise 3
+
+### Statement
+
+Create a **Functional Interface** containing a method named `operation()` that returns a `float`.  
+From the `main()` method, implement the interface using **lambda expressions** so that different mathematical operations can be executed.
+
+The operations demonstrated are:
+- Addition
+- Subtraction
+- Multiplication
+- Division
+
+Each operation is implemented using a lambda expression and executed with different numeric values.
+
+### Implementation
+
+- A custom functional interface (`Operation`) defines a single abstract method.
+- The method receives two `float` parameters and returns the result of the operation.
+- Lambda expressions are used to implement the behavior of the method for each operation.
+- The operations are executed in `main`, passing two numbers as arguments.
+
+Note: Although the original statement only specifies returning a `float`, two parameters were added to the method in order to make the operations reusable and more realistic for mathematical calculations.
+
+### Example output
+
+```
+Addition: 25.0
+Subtraction: 22.0
+Multiplication: 320.0
+Division: 5.0
+```
