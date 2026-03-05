@@ -287,3 +287,45 @@ Print the result to the console.
 Filtered names:
 [Ary, Aeg]
 ```
+
+---
+
+## Exercise 2
+
+### Statement
+
+Create a method that receives a list of `Integer` values and returns a **comma‑separated String**.
+
+Each number must be transformed as follows:
+- If the number is **even**, prefix it with the letter **"e"**.
+- If the number is **odd**, prefix it with the letter **"o"**.
+
+Example:
+
+Input list:
+```
+[3, 55, 44]
+```
+
+Output:
+```
+o3, o55, e44
+```
+
+The result must be printed to the console.
+
+### Implementation
+
+- The list of numbers is created in `main`.
+- A dedicated class (`NumberFormatter`) contains the transformation logic.
+- The method returns a single `String` built from the list.
+- The Java Streams API is used:
+  - `map()` transforms each number into its formatted representation.
+  - The modulo operator (`%`) is used to determine whether a number is even or odd.
+  - `Collectors.joining(", ")` is used to combine the results into a comma‑separated string.
+
+### Example output
+
+```
+o3, o55, e44, e8, o11
+```
