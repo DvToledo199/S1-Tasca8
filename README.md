@@ -363,6 +363,7 @@ Addition: 25.0
 Subtraction: 22.0
 Multiplication: 320.0
 Division: 5.0
+```
 
 ---
 
@@ -404,5 +405,4 @@ Replace 'a' with '4':
 
 Numeric elements only:
 [456, 123]
-```
 ```
