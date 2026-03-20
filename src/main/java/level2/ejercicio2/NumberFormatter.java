@@ -7,13 +7,7 @@ public class NumberFormatter {
 
     public static String numbersToString(List<Integer> numbers) {
         return numbers.stream()
-                .map(number -> {
-                    if (number % 2 == 0) {
-                        return "e" + number;
-                    } else {
-                        return "o" + number;
-                    }
-                })
+                .map(n -> (n % 2 == 0 ? "e" : "o") + n)
                 .collect(Collectors.joining(", "));
     }
 }
